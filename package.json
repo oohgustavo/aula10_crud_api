@@ -1,0 +1,24 @@
+{
+  "name": "aula10_crud_api",
+  "version": "1.0.0",
+  "description": "aula 10 crud  API faterj algoritmos 2",
+  "homepage": "https://github.com/oohgustavo/aula10_crud_api#readme",
+  "bugs": {
+    "url": "https://github.com/oohgustavo/aula10_crud_api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oohgustavo/aula10_crud_api.git"
+  },
+  "license": "ISC",
+  "author": "Gustavo Câmara",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "sqlite3": "^6.0.1"
+  }
+}
