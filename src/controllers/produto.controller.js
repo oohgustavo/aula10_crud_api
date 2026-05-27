@@ -3,13 +3,26 @@ import { response } from "express";
 
 async function findAllProdutoController(request, response) {
     try {
-      const produto =  await produtoService.findALLProdutoService();
-        response.status(200).send({produtos});
+        const produto =  await produtoService.findAllProdutoService();
+        response.status(200).send({produto});
     } catch(error){
         response.status(404).send(error.message);
     }
-    
 }
+    
+async function createProdutoController(request, response) {
+    const novoProduto = request.body;
+
+    try {
+        const produto = await produtoService.createProdutoService(novoProduto);
+        response.status(201).send({produto});
+    } catch (error) {
+        response.status(404).send(error.message);
+    }
+
+}
+
 export default {
-    findAllProdutoController
+    findAllProdutoController,
+    createProdutoController
 }

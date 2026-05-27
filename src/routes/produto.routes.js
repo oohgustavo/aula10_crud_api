@@ -3,6 +3,7 @@ import { Router } from "express";
 
 const produtoRouter = Router();
 
-produtoRouter.get("/produtos", produtoController.findAllProdutoController);
+produtoRouter.get("/produto", produtoController.findAllProdutoController);
+produtoRouter.post("/produto", produtoController.createProdutoController)
 
-export default  produtoRouter;
+export default  produtoRouter; 
